@@ -1,0 +1,36 @@
+<div class="img-container">
+  <div>
+      <img src="../../../assets/imaage/place-order.svg" alt="Order Successful">
+  <div class="centered">order placed successfully</div>
+</div>
+  
+
+  <!-- <mat-card class="example-card"> -->
+  <div >
+    <div>
+      <h3 class="text">
+          <div style="text-align: center;">Hurraay!!! Your order is confirmed.</div>
+          <div style="text-align: center;">The order id is #12234. Save the order id for </div>
+          <div style="text-align: center;">
+              further communication
+          </div>
+      </h3>
+      <br/>
+       <table border="1" >
+          <tr>
+            <th>Email Us</th>
+            <th>Contact Us</th>
+            <th>Address</th>
+            <th>name</th>
+          </tr>
+          <tr>
+            <td>{{decoded?.email}}</td>
+            <td>{{orderList?.mobile}}</td>
+            <td>{{orderList?.address}}</td>
+            <td>{{orderList?.name}}</td>
+          </tr>
+       </table>
+       <button  mat-flat-button color="primary" (click)="continueShopping()">Continue shopping</button>
+    </div>
+</div>
+</div>
